@@ -11,7 +11,7 @@ variable "environment" {
 variable "enable_https" {
   description = "Enable HTTPS"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "enable_waf" {
