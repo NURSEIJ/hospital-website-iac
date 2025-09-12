@@ -7,13 +7,13 @@ variable "domain_name" {
 variable "environment" {
   description = "Deployment environment (dev/stage/prod)"
   type        = string
-  default     = "prod"
+  default     = "dev"
 }
 
 variable "enable_https" {
   description = "Enable HTTPS via ACM certificate"
   type        = bool
-  default     = true
+  default     = false  # ← Set to false for CloudFront default certificate
 }
 
 variable "enable_waf" {
